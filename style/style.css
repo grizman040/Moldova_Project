@@ -6,10 +6,6 @@ body {
   margin: 0;
 }
 
-.construction {
-  letter-spacing: 1rem;
-}
-
 .desktop_hidden {
   display: none;
 }
@@ -58,7 +54,7 @@ header {
 }
 
 .bg-img {
-  background-image: url("/img/moldova_wall.jpg");
+  background-image: url("img/moldova_wall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
