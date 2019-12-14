@@ -45,7 +45,8 @@ header {
   height: 100vh;
 }
 
-.vid-bg, .bg-img {
+.vid-bg,
+.bg-img {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -189,7 +190,8 @@ table {
   margin-top: 2rem;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #a8a8a8;
   text-align: center;
 }
