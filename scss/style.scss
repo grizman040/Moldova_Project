@@ -34,9 +34,11 @@ body {
     opacity: 0.5;
 
 }
-#back_on_top:hover{
+
+#back_on_top:hover {
     opacity: 0.8;
 }
+
 .fix {
     clear: both;
     overflow: hidden;
@@ -72,6 +74,7 @@ header {
     background-size: cover;
 
 }
+
 .bg-img img {
     position: relative;
     opacity: 0.4;
@@ -160,6 +163,7 @@ header {
     color: blanchedalmond;
     font-size: 2rem;
 }
+
 .section-header {
     text-align: center;
     margin-bottom: 30px;
@@ -227,6 +231,7 @@ hr {
 .about-right img {
     width: 100%;
 }
+
 .places-area {
     display: flex;
     justify-content: center;
@@ -245,110 +250,130 @@ hr {
 }
 
 footer {
-position: relative;
+    position: relative;
     width: 100%;
     height: 4rem;
     background-color: black;
     padding: 18px;
 
-    
+
 }
+
 .f-text {
     color: tomato;
     float: left;
 
-    
-}
-.social {
-    float: right;
-position: relative;
-margin: 0 auto;
-bottom: 4px;
 
 }
-.social > img{
+
+.social {
+    float: right;
+    position: relative;
+    margin: 0 auto;
+    bottom: 4px;
+
+}
+
+.social>img {
     width: 2rem;
     height: 2rem;
 }
-    
+
 .copy_right_desktop {
     display: none;
 }
+
 .copy_right {
-    display: block;    
-    
+    display: block;
+
 }
 
-@media screen and (min-width:320px) and (max-width:768px){
+@media screen and (min-width:320px) and (max-width:768px) {
 
     .bg-img img {
         top: 7rem;
     }
-     .welcome-text  {
+
+    .welcome-text {
         position: relative;
         margin-top: 33%;
 
     }
+
     .navbar {
         background: rgba(0, 0, 0, 0.495);
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1024px) {
 
     .container {
         max-width: 100%;
     }
+
     .navbar {
         background: rgba(0, 0, 0, 0.595);
     }
+
     .bg-img img {
         top: 9rem;
     }
-    .welcome-text  {
+
+    .welcome-text {
         position: relative;
         margin-top: 30%;
 
     }
+
     .welcome-text .desktop_hidden {
         display: block;
     }
+
     .copy_right {
         display: none;
     }
+
     .copy_right_desktop {
         display: block;
     }
-.social > img {
-    padding: 10px;
+
+    .social>img {
+        padding: 10px;
+    }
+
 }
-   
-}
-@media screen and (min-width:1025px){
-.container {
-    max-width: 100%;
-}
-.navbar {
-    background: rgba(0, 0, 0, 0.695);
-}
-    .collapse  {display: flex;
+
+@media screen and (min-width:1025px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.695);
+    }
+
+    .collapse {
+        display: flex;
         justify-content: flex-end;
     }
 
-    .welcome-text  {
+    .welcome-text {
         position: relative;
         margin-top: 27%;
 
     }
+
     .welcome-text .desktop_hidden {
-        
+
         display: block;
     }
+
     .copy_right {
         display: none;
     }
+
     .copy_right_desktop {
         display: block;
     }
-   
+
 }
