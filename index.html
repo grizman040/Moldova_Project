@@ -14,11 +14,14 @@
 
 <body>
     <header class="fix">
-        <video id="either-gif-or-video" src="media/moldova.mp4" 
-                src="media/media.io_moldova.ogv"
-                src="media/media.io_moldova.webm"
-        class="vid-bg" autoplay loop muted></video>
-        <audio src="media/doga.mp3" src="media/media.io_doga.ogg" autoplay loop type="audio/mpeg"></audio>
+        <video class="vid-bg" id="either-gif-or-video" autoplay loop muted>
+        <source src="media/moldova.mp4" type="video/mp4">
+        <source src="media/moldova.ogv" type="video/ogg">
+        </video>
+        <audio autoplay loop>
+                <source src="media/doga.mp3" type="audio/mp4">
+                <source src="media/doga.ogg" type="audio/ogg">
+        </audio>
         <div class="nav-area">
             <div class="logo"><span class="blue">Patria</span> <span class="yellow">mea</span> <span
                     class="red">Moldova</span> <img src="img/moldova_map.png" alt="flag" width="50px"></div>

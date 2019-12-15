@@ -124,8 +124,8 @@ header {
 
 .welcome-text {
   position: relative;
-  margin-top: 58%;
   text-align: center;
+  top: 55%;
 }
 
 .btn {
@@ -267,27 +267,9 @@ footer {
   display: block;
 }
 
-#either-gif-or-video video {
-  display: none;
-}
-
-@media (-webkit-video-playable-inline) {
-  #either-gif-or-video img {
-    display: none;
-  }
-
-  #either-gif-or-video video {
-    display: initial;
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .bg-img img {
     top: 7rem;
-  }
-
-  .welcome-text {
-    position: relative;
-    margin-top: 33%;
   }
 
   .navbar {
@@ -305,11 +287,6 @@ footer {
 
   .bg-img img {
     top: 9rem;
-  }
-
-  .welcome-text {
-    position: relative;
-    margin-top: 30%;
   }
 
   .welcome-text .desktop_hidden {
@@ -340,11 +317,6 @@ footer {
   .collapse {
     display: flex;
     justify-content: flex-end;
-  }
-
-  .welcome-text {
-    position: relative;
-    margin-top: 27%;
   }
 
   .welcome-text .desktop_hidden {
