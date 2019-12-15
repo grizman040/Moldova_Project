@@ -83,6 +83,7 @@ header {
 .logo {
   text-align: center;
   letter-spacing: 0.5rem;
+  padding: 9px;
 }
 
 .blue {
@@ -266,6 +267,19 @@ footer {
   display: block;
 }
 
+#either-gif-or-video video {
+  display: none;
+}
+
+@media (-webkit-video-playable-inline) {
+  #either-gif-or-video img {
+    display: none;
+  }
+
+  #either-gif-or-video video {
+    display: initial;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .bg-img img {
     top: 7rem;
