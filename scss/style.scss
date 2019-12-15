@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -18,7 +20,7 @@ body {
 #back_on_top {
     display: none;
     position: fixed;
-    bottom: 10px;
+    bottom: 9%;
     left: 10px;
     z-index: 200;
     font-size: 18px;
@@ -32,7 +34,9 @@ body {
     opacity: 0.5;
 
 }
-
+#back_on_top:hover{
+    opacity: 0.8;
+}
 .fix {
     clear: both;
     overflow: hidden;
@@ -63,16 +67,22 @@ header {
 }
 
 .bg-img {
-    background-image: url('../img/moldova_wall.jpg');
+    background-image: url('../img/moldova_unu.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+.bg-img img {
+    position: relative;
+    opacity: 0.4;
+    margin: 110px auto;
+    width: 100%;
 }
 
 .nav-area {
     background: #000;
     height: 60px;
-    position: sticky;
+    position: absolute;
     width: 100%;
 }
 
@@ -94,19 +104,16 @@ header {
     color: red;
 }
 
-.menu-area {
-    float: right;
-    list-style: none;
-    margin: 20px;
-
+.navbar {
+    background: rgba(0, 0, 0, 0.295);
 }
 
-.menu-area li {
-    display: inline-block;
+.navbar-collapse li {
     margin: 0 5px;
+    list-style: none;
 }
 
-.menu-area li a {
+.navbar-collapse li a {
     text-decoration: none;
     color: blanchedalmond;
     padding: 5px 10px;
@@ -114,11 +121,11 @@ header {
 
 }
 
-.menu-area li.active a {
+.navbar-collapse li.active a {
     color: tomato;
 }
 
-.menu-area li a:hover {
+.navbar-collapse li a:hover {
     color: tomato;
 }
 
@@ -129,17 +136,9 @@ header {
 
 }
 
-.welcome-text p {
-    display: none;
-}
-
 .btn {
     border: 2px solid tomato;
-    display: inline-block;
     border-radius: 25px;
-
-
-
 }
 
 .btn a {
@@ -161,13 +160,6 @@ header {
     color: blanchedalmond;
     font-size: 2rem;
 }
-
-// .welcome-text img {             MOLDOVA MAP 
-//     opacity: 0.3;
-//     float: left;
-//     line-height: -400px;
-// }
-
 .section-header {
     text-align: center;
     margin-bottom: 30px;
@@ -232,24 +224,9 @@ hr {
     background-color: tomato;
 }
 
-// .about-left{
-//     width: 40%;
-//     float: left;
-// }
 .about-right img {
     width: 100%;
 }
-
-
-
-// }
-// .about-right{
-//     width: 50%;
-//     float: right;
-//     margin-top: 1rem;
-//     margin-right: 5%;
-
-// }
 .places-area {
     display: flex;
     justify-content: center;
@@ -265,4 +242,113 @@ hr {
 .single-city img {
     width: 100%;
     height: 20rem;
+}
+
+footer {
+position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    padding: 18px;
+
+    
+}
+.f-text {
+    color: tomato;
+    float: left;
+
+    
+}
+.social {
+    float: right;
+position: relative;
+margin: 0 auto;
+bottom: 4px;
+
+}
+.social > img{
+    width: 2rem;
+    height: 2rem;
+}
+    
+.copy_right_desktop {
+    display: none;
+}
+.copy_right {
+    display: block;    
+    
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+
+    .bg-img img {
+        top: 7rem;
+    }
+     .welcome-text  {
+        position: relative;
+        margin-top: 33%;
+
+    }
+    .navbar {
+        background: rgba(0, 0, 0, 0.495);
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+    .container {
+        max-width: 100%;
+    }
+    .navbar {
+        background: rgba(0, 0, 0, 0.595);
+    }
+    .bg-img img {
+        top: 9rem;
+    }
+    .welcome-text  {
+        position: relative;
+        margin-top: 30%;
+
+    }
+    .welcome-text .desktop_hidden {
+        display: block;
+    }
+    .copy_right {
+        display: none;
+    }
+    .copy_right_desktop {
+        display: block;
+    }
+.social > img {
+    padding: 10px;
+}
+   
+}
+@media screen and (min-width:1025px){
+.container {
+    max-width: 100%;
+}
+.navbar {
+    background: rgba(0, 0, 0, 0.695);
+}
+    .collapse  {display: flex;
+        justify-content: flex-end;
+    }
+
+    .welcome-text  {
+        position: relative;
+        margin-top: 27%;
+
+    }
+    .welcome-text .desktop_hidden {
+        
+        display: block;
+    }
+    .copy_right {
+        display: none;
+    }
+    .copy_right_desktop {
+        display: block;
+    }
+   
 }
